@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<connectdelay value="10000"/>
+<congControl_DelayThreshold_1 value="2.5"/>
+<congControl_DelayThreshold_2 value="8.0"/>
+<congControl_DelayThreshold_3 value="14.0"/>
+<congControl_BackToNormalDelayThreshold_1 value="1.5"/>
+<congControl_BackToNormalDelayThreshold_2 value="5.5"/>
+<congControl_BackToNormalDelayThreshold_3 value="10.0"/>
+<servers>
+	<server name="testserver" started="true" hostAddress="127.0.0.1" hostPort="2350" ipChannelType="1" acceptAnonymousConnections="false" maxConcurrentConnectionsCount="0" extraHostAddresseSize="1">
+		<extraHostAddress value="192.168.0.174"/>
+		<associations>
+			<string value="serverAssociation"/>
+		</associations>
+	</server>
+</servers>
+<associations>
+	<name value="serverAssociation"/>
+	<association name="serverAssociation" assoctype="SERVER" hostPort="0" peerAddress="127.0.0.1" peerPort="2351" serverName="testserver" ipChannelType="1" extraHostAddresseSize="0"/>
+	<name value="clientAssociation"/>
+	<association name="clientAssociation" assoctype="CLIENT" hostAddress="127.0.0.1" hostPort="2351" peerAddress="127.0.0.1" peerPort="2350" ipChannelType="1" extraHostAddresseSize="1">
+		<extraHostAddress value="192.168.0.174"/>
+	</association>
+</associations>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/asn-2.0.0-20130624.000259-57.jar"/>
+	<classpathentry kind="lib" path="lib/commons-1.0.0.CR1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/congestion-8.0.0-170.jar"/>
+	<classpathentry kind="lib" path="lib/dmrApi.jar"/>
+	<classpathentry kind="lib" path="lib/dms.jar"/>
+	<classpathentry kind="lib" path="lib/dmtrCmds.jar"/>
+	<classpathentry kind="lib" path="lib/dtr.jar"/>
+	<classpathentry kind="lib" path="lib/dtu.jar"/>
+	<classpathentry kind="lib" path="lib/gctApi.jar"/>
+	<classpathentry kind="lib" path="lib/javolution-5.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/m3ua-api-8.0.0-170.jar"/>
+	<classpathentry kind="lib" path="lib/m3ua-impl-8.0.0-170.jar"/>
+	<classpathentry kind="lib" path="lib/mtp-8.0.0-170.jar"/>
+	<classpathentry kind="lib" path="lib/mtp-api-8.0.0-170.jar"/>
+	<classpathentry kind="lib" path="lib/netty-all-4.1.25.Final.jar"/>
+	<classpathentry kind="lib" path="lib/SCTP_v2.jar"/>
+	<classpathentry kind="lib" path="lib/ss7-ext-api-8.0.0-170.jar"/>
+	<classpathentry kind="lib" path="lib/statistics-api-8.0.0-170.jar"/>
+	<classpathentry kind="lib" path="lib/statistics-impl-8.0.0-170.jar"/>
+	<classpathentry kind="lib" path="lib/Utilities.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
