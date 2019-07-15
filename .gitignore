@@ -1,4 +1,6 @@
-/Core Components/SCTP_v2/bin
 /Core Components/JavaTemplate/build
+/Core Components/SCTP_v2/bin
 /Core Components/log4j-globitel_v2/bin
 /Core Components/M3UA/bin
+
+/Core Components/JavaTemplate/traces
