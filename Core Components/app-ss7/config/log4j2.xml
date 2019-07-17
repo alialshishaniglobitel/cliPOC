@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%d{MMM dd HH:mm:ss.SSS}] %-5level %msg%n" />
+		</Console>
+		<!-- 
+		<RollingFile name="app" fileName="./traces/app.log" filePattern="traces/${date:yyyy-MM}/app-%d{yyyy-MM-dd-HH}-%i.log.gz">
+		 -->		
+		<RollingFile name="app" fileName="./traces/app.log" filePattern="traces/app.log.%d{yyyy-MM-dd-HH}.%i">
+			<!--
+			<PatternLayout pattern="%d %p %c{1.} [%t] %m %ex%n" />
+			-->
+			<PatternLayout pattern="[%d{MMM dd HH:mm:ss.SSS}] %-5level %msg%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+			<!-- 
+			<DefaultRolloverStrategy max="10"/>
+			-->
+		</RollingFile>
+		<RollingFile name="api" fileName="./traces/api.log" filePattern="traces/api.log.%d{yyyy-MM-dd-HH}.%i">
+			<!--
+			<PatternLayout pattern="%d %p %c{1.} [%t] %m %ex%n" />
+			-->
+			<PatternLayout pattern="[%d{MMM dd HH:mm:ss.SSS}] %-5level %msg%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+			<!-- 
+			<DefaultRolloverStrategy max="10"/>
+			-->
+		</RollingFile>
+		<RollingFile name="tdr" fileName="./traces/tdr.log" filePattern="traces/tdr.log.%d{yyyy-MM-dd-HH}.%i">
+			<!--
+			<PatternLayout pattern="%d %p %c{1.} [%t] %m %ex%n" />
+			-->
+			<PatternLayout pattern="%msg%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+			<!-- 
+			<DefaultRolloverStrategy max="10"/>
+			-->
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="app.log" level="DEBUG">
+			<AppenderRef ref="app" level="DEBUG" />
+		</Logger>
+		<Logger name="api.log" level="DEBUG">
+			<AppenderRef ref="api" level="DEBUG" />
+		</Logger>
+		<Logger name="tdr.log" level="DEBUG">
+			<AppenderRef ref="tdr" level="DEBUG" />
+		</Logger>
+		<Root level="trace">
+			<AppenderRef ref="console" level="DEBUG" />
+		</Root>
+	</Loggers>
+</Configuration>

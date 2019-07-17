@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<connectdelay value="10000"/>
+<congControl_DelayThreshold_1 value="2.5"/>
+<congControl_DelayThreshold_2 value="8.0"/>
+<congControl_DelayThreshold_3 value="14.0"/>
+<congControl_BackToNormalDelayThreshold_1 value="1.5"/>
+<congControl_BackToNormalDelayThreshold_2 value="5.5"/>
+<congControl_BackToNormalDelayThreshold_3 value="10.0"/>
+<servers/>
+<associations>
+	<name value="hq1.hss.epc.umniah.jo.com"/>
+	<association name="hq1.hss.epc.umniah.jo.com" assoctype="CLIENT" hostAddress="192.168.100.7" hostPort="9501" peerAddress="192.168.100.7" peerPort="9502" serverName="" ipChannelType="0" extraHostAddresseSize="0"/>
+	<name value="hq1.mme.epc.mnc003.mcc416.3gppnetwork.org"/>
+	<association name="hq1.mme.epc.mnc003.mcc416.3gppnetwork.org" assoctype="CLIENT" hostAddress="192.168.100.7" hostPort="9601" peerAddress="192.168.100.7" peerPort="9602" serverName="" ipChannelType="0" extraHostAddresseSize="0"/>
+	<name value="omaish.mme.epc.mnc003.mcc416.3gppnetwork.org"/>
+	<association name="omaish.mme.epc.mnc003.mcc416.3gppnetwork.org" assoctype="CLIENT" hostAddress="192.168.100.7" hostPort="9701" peerAddress="192.168.100.7" peerPort="9702" serverName="" ipChannelType="0" extraHostAddresseSize="0"/>
+</associations>

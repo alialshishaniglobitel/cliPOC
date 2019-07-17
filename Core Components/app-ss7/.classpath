@@ -2,5 +2,45 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/jdom-2.0.6/lib/xalan/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/jdom-2.0.6/lib/xalan/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/jdom-2.0.6/lib/jaxen-1.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/jdom-2.0.6/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="lib/jdom-2.0.6/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="lib/jdom-2.0.6/jdom-2.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-common/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-common/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-common/commons-httpclient-3.0-rc3.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-common/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-common/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-common/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-common/javolution-5.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-common/log4j-api-2.11.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-common/log4j-core-2.11.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-common/log4j-globitel-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/Template.jar"/>
+	<classpathentry kind="lib" path="lib/sctp/bsh-2.0b6.jar"/>
+	<classpathentry kind="lib" path="lib/sctp/commons-codec-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/sctp/jcommander-1.72.jar"/>
+	<classpathentry kind="lib" path="lib/sctp/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="lib/sctp/netty-all-4.1.25.Final.jar"/>
+	<classpathentry kind="lib" path="lib/sctp/SCTP_v2.jar"/>
+	<classpathentry kind="lib" path="lib/sctp/testng-6.14.3.jar"/>
+	<classpathentry kind="lib" path="lib/ss7/asn-2.2.0-143.jar"/>
+	<classpathentry kind="lib" path="lib/ss7/map-api-8.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/ss7/map-impl-8.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/ss7/sccp-api-8.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/ss7/sccp-impl-8.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/ss7/tcap-api-8.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/ss7/tcap-impl-8.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc/axis.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc/javax.wsdl_1.6.2.v201012040545.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc/RpcCommon.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc/saaj.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc/SpApiResponses.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc/ws-commons-util-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc/ws-xmlrpc-3.1-modified.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc/wsdl4j.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
