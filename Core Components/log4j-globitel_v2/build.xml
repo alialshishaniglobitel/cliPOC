@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="log4j-globitel" default="bin" basedir=".">
+	<target name="clean">
+		<delete dir="bin"/>
+		<delete dir="BuildData"/>
+	</target>
+	
+	<target name="create" depends="clean">
+		<mkdir dir="bin"/>
+		<mkdir dir="BuildData"/>		
+	</target>
+		
+	<target name="set_depends" depends="create">
+		<mkdir dir="BuildData/config"/>
+		<mkdir dir="BuildData/lib"/>
+
+		<copy todir="BuildData/lib">
+			<fileset dir="lib/" includes="**/*.jar" />
+		</copy>
+		<copy todir="BuildData/config">
+			<fileset dir="config" includes="**/*" />
+			
+		</copy>
+	</target>
+	
+	<path id="master-classpath">
+		<fileset dir="lib/" includes="**/*.jar" />
+	</path>
+	
+	<target name="compile" depends="set_depends">
+		<javac classpathref="master-classpath" debug="false" includeantruntime="false" srcdir="src" destdir="bin" includes="**/*.java" encoding="UTF-8">
+		</javac>
+	</target>
+
+	<target name="bin" depends="compile">
+		<jar destfile="BuildData\log4j-globitel-v2.0.0.jar">
+			<fileset dir="bin">
+				<include name="**/*.*" />
+			</fileset>		
+		</jar>
+	</target>
+</project>
